@@ -10,13 +10,13 @@ body {
   font-family: "Campton", "Arial";
 }
 
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-html, body{
+html,
+body {
   height: 100%;
 }

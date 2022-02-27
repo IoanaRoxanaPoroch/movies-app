@@ -9,24 +9,24 @@
 .logo-form {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
   width: 100%;
 }
 .content-form {
   width: 560px;
-  /* height: 62%; */
   background-color: #0a0a0a;
 }
 
 .form-container {
   margin: auto;
   padding: 3%;
+  width: 560px;
 }
 
 .auth-content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* height: 80%; */
 }
 
 .top-container {

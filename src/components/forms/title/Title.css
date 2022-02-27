@@ -2,9 +2,6 @@
   color: white;
   text-align: center;
   font-size: 48px;
-  width: 305px;
-  height: 144px;
-  left: 750px;
 }
 
 .title-watchlist {
@@ -20,13 +17,16 @@
   overflow: hidden;
 }
 
+@media only screen and (min-device-width: 481px) {
+  .title-aut {
+    width: 95%;
+  }
+}
 @media only screen and (max-device-width: 480px) {
   .title-aut {
     display: flex;
-    text-align: start;
     color: white;
-    justify-content: flex-start;
     font-size: 30px;
-    padding-top: 15%;
+    padding-top: 5%;
   }
 }

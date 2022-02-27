@@ -21,14 +21,14 @@
 }
 
 .btn-login-container {
-  margin: 75px 0px;
+  margin-top: 120px;
 }
 
 .prg-container {
   display: flex;
   justify-content: center;
   color: #9c9b9b;
-  margin-top: -50px;
+  margin-top: 20px;
 }
 
 .prg-container p a {
@@ -55,8 +55,10 @@
   float: right;
   margin-left: -27px;
   z-index: 3;
+  width: 7%;
   position: relative;
   cursor: pointer;
+  color: #9c9b9b;
 }
 
 .error-msg-container {
@@ -81,7 +83,6 @@
     display: flex;
     justify-content: center;
     color: #9c9b9b;
-    margin-top: -50px;
   }
 
   .prg-container p a {

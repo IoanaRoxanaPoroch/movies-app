@@ -88,7 +88,7 @@ export default function Login() {
             </Form.Group>
           </div>
           <div className="auth-input-login">
-            <Form.Group size="lg" controlId="input-password">
+            {/* <Form.Group size="lg" controlId="input-password">
               <AuthInput
                 placeholder="Password"
                 type={type}
@@ -103,7 +103,22 @@ export default function Login() {
                   <i className="fa-solid fa-eye-slash eye-icon"></i>
                 )}
               </span>
-            </Form.Group>
+            </Form.Group> */}
+            <input
+              placeholder="Password"
+              type={type}
+              className="password"
+              required
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <i
+              onClick={showHide}
+              className={
+                "login-icon fa-solid far " +
+                (type === "input" ? "fa-eye" : "fa-eye-slash")
+              }
+              id="togglePassword"
+            ></i>
           </div>
           <div>
             <p className="pull-left error-msg-container">{errorMessages}</p>
