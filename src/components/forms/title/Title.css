@@ -2,14 +2,12 @@
   color: white;
   text-align: center;
   font-size: 48px;
-  /* position: absolute; */
   width: 305px;
   height: 144px;
   left: 750px;
 }
 
 .title-watchlist {
-  /* display: flex; */
   color: white;
   text-align: left;
   font-size: 48px;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Submit.css";
 import Button from "react-bootstrap/Button";
 
-export default function Submit(props) {
+export default function SubmitBtn(props) {
   // const [name, setName] = useState("");
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("");

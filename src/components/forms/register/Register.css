@@ -1,127 +1,4 @@
-/* .register {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Campton";
-  background-color: #0a0a0a;
-  position: absolute;
-  width: 560px;
-  height: 711px;
-  left: 650px;
-  top: 205px;
-  padding: 190px 30px;
-}
-.top-brd {
-  position: absolute;
-  width: 560px;
-  height: 8px;
-  left: 660px;
-  top: 207px;
-  background: #212128;
-}
-
-.r-title {
-  color: white;
-  text-align: center;
-  font-size: 48px;
-  position: absolute;
-  width: 432px;
-  height: 144px;
-  left: 70px;
-  top: 10px;
-  font-family: "Campton";
-}
-
-.register-btn {
-  position: absolute;
-  left: 100px;
-  top: 520px;
-  font-family: "Campton";
-  font-size: 18px;
-  line-height: 25px;
-  /* identical to box height */
-/* display: flex; */
-/* align-items: center;
-  text-align: center;
-  color: #ffffff;
-  background: #f5044c;
-  border-radius: 8px;
-  height: 48px;
-  width: 367px;
-} */
-
-/* .name-box {
-  position: absolute;
-  width: 368px;
-  height: 48px;
-  left: 100px;
-  top: 245px;
-  border-radius: 8px;
-  border: 1px solid #9c9b9b;
-  box-sizing: border-box;
-  background-color: #0a0a0a;
-  text-indent: 10px;
-} */
-
-/* .email-box {
-  position: absolute;
-  width: 368px;
-  height: 48px;
-  left: 100px;
-  top: 310px;
-  border-radius: 8px;
-  border: 1px solid #9c9b9b;
-  box-sizing: border-box;
-  background-color: #0a0a0a;
-  text-indent: 10px;
-} */
-/* 
-.pass-box {
-  position: absolute;
-  width: 368px;
-  height: 48px;
-  left: 100px;
-  top: 375px;
-  border-radius: 8px;
-  border: 1px solid #9c9b9b;
-  box-sizing: border-box;
-  background-color: #0a0a0a;
-  color: #9c9b9b;
-  text-indent: 10px;
-} */
-
-/* .prg {
-  position: absolute;
-  width: 560px;
-  height: 80px;
-  left: 0px;
-  top: 550px;
-  font-family: Campton;
-  font-size: 14px;
-  line-height: 80px;
-
-  text-align: center;
-  color: #9c9b9b;
-} */
-
-/* .login-r {
-  color: rgba(156, 155, 155, 1);
-  border-bottom: 1px solid;
-  padding-bottom: 5px;
-  text-decoration: none;
-  position: absolute;
-  left: 378px;
-  top: 563px;
-  font-family: "Campton";
-  font-size: 14px;
-  line-height: 80px;
-  height: 50px;
-  text-align: center;
-}  */
-.title-form {
+.title-form-register {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -129,15 +6,14 @@
   margin: 40px 0px;
 }
 
-.auth-form {
+.auth-form-register {
   display: flex;
   justify-content: center;
 }
 
-.auth-input {
+.auth-input-register {
   margin: 5% 0%;
-  display:flex;
-  justify-content: center;
+  display: flex;
 }
 
 .fgrt-pass-label {

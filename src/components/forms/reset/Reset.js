@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Title from "../title/Title";
-import Input from "../inputs/input/Input";
-import Submit from "../../buttons/submit/Submit";
+import AuthInput from "../inputs/input/Input";
+import SubmitBtn from "../../buttons/submit/Submit";
 import "./Reset.css";
 
 // cred ca poti folosi es6 pentru functii
@@ -24,8 +24,8 @@ export default function Reset() {
   // cred ca numele acestei functie ar trebui sa fie "validateButton"
   function validateForm() {
     // ce se intampla daca nu exista email sau password?
-    if( email.length){
-    return  email.length;
+    if (email.length) {
+      return email.length;
     }
   }
   function handleSubmit(event) {
@@ -35,7 +35,7 @@ export default function Reset() {
   return (
     // aici ar trebui sa creezi o functie pentru a valida toate input-urile
     <div style={{ width: "100%" }}>
-      <div className="title-form">
+      <div className="title-form-reset">
         <Title title={title} className="title-aut" />
       </div>
       <div className="reset-prg-container">
@@ -44,11 +44,11 @@ export default function Reset() {
           password reseted.
         </p>
       </div>
-      <div className="auth-form">
+      <div className="auth-form-reset">
         <Form onSubmit={handleSubmit}>
-          <div className="auth-input">
+          <div className="auth-input-reset">
             <Form.Group size="lg" controlId="input-email">
-              <Input
+              <AuthInput
                 placeholder="Email adress"
                 type="email"
                 className="email"
@@ -56,7 +56,7 @@ export default function Reset() {
             </Form.Group>
           </div>
           <div className="btn-reset-container">
-            <Submit
+            <SubmitBtn
               className="btn-reset"
               text="Reset password"
               name="test"

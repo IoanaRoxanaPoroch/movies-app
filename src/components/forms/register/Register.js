@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Register.css";
 import Form from "react-bootstrap/Form";
 import Title from "../title/Title";
-import Input from "../inputs/input/Input";
-import Submit from "../../buttons/submit/Submit";
-import Container from "../container/Container";
+import AuthInput from "../inputs/input/Input";
+import SubmitBtn from "../../buttons/submit/Submit";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -23,9 +22,7 @@ export default function Register() {
   // validateInputs(e.target.value, "email")
   // in acesta situatie vei putea crea o functie mai dinamica
 
-  // cred ca numele acestei functie ar trebui sa fie "validateButton"
   function validateForm() {
-    // ce se intampla daca nu exista email sau password?
     return name.length > 0 && email.length > 0 && password.length > 0;
   }
   function handleSubmit(event) {
@@ -33,31 +30,29 @@ export default function Register() {
   }
 
   return (
-    // aici ar trebui sa creezi o functie pentru a valida toate input-urile
     <div style={{ width: "100%" }}>
-      <div className="title-form">
+      <div className="title-form-register">
         <Title title={title} className="title-aut" />
       </div>
-      <div className="auth-form">
+      <div className="auth-form-register">
         <Form onSubmit={handleSubmit}>
-          <div className="auth-input">
+          <div className="auth-input-register">
             <Form.Group size="lg" controlId="input-name">
-              {/* poate ar fi ok pentru tine sa creezi o functie la onChange */}
-              <Input placeholder="Full Name" type="name" className="name" />
+              <AuthInput placeholder="Full Name" type="name" className="name" />
             </Form.Group>
           </div>
-          <div className="auth-input">
+          <div className="auth-input-register">
             <Form.Group size="lg" controlId="input-email">
-              <Input
+              <AuthInput
                 placeholder="Email adress"
                 type="email"
                 className="email"
               />
             </Form.Group>
           </div>
-          <div className="auth-input">
+          <div className="auth-input-register">
             <Form.Group size="lg" controlId="input-password">
-              <Input
+              <AuthInput
                 placeholder="Password"
                 type="password"
                 className="password"
@@ -73,7 +68,7 @@ export default function Register() {
             </p>
           </div>
           <div className="btn-register-container">
-            <Submit
+            <SubmitBtn
               className="btn-register"
               text="Register"
               name="test"

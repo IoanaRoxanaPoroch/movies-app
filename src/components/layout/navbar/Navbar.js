@@ -5,6 +5,28 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav>
+      <div className="nav-content-mobile">
+        <ul className="navi-list-mobile">
+          <li>
+            <a href="/">
+              <i className="fa-solid fa-house"></i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="/watchlist">
+              <i className="fa-thin fa-circle-bookmark"></i>
+              <p>Watchlist</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i className="fa-solid fa-magnifying-glass"></i>
+              <p>Explore</p>
+            </a>
+          </li>
+        </ul>
+      </div>
       <ul className="navi-list">
         <li className="text-nav">
           <a className="nav-links" href="/">

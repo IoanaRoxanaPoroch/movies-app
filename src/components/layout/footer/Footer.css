@@ -70,7 +70,9 @@ div.social i {
 /* nu stiu daca exista o regula, dar cred ca ar fi in regula ca @media sa fie la finalul fisierului */
 @media screen and (max-width: 850px) {
   .footer {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr;
+     */
+    display: none;
   }
 }
 .follow {

@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import "./Login.css";
 import Title from "../title/Title";
-import Input from "../inputs/input/Input";
-import Submit from "../../buttons/submit/Submit";
+import AuthInput from "../inputs/input/Input";
+import SubmitBtn from "../../buttons/submit/Submit";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-// cred ca poti folosi es6 pentru functii
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -72,14 +71,14 @@ export default function Login() {
 
   return (
     <div style={{ width: "100%" }}>
-      <div className="title-form">
+      <div className="title-form-login">
         <Title title={title} className="title-aut" />
       </div>
-      <div className="auth-form">
+      <div className="auth-form-login">
         <Form onSubmit={handleSubmit}>
-          <div className="auth-input">
+          <div className="auth-input-login">
             <Form.Group size="lg" controlId="input-email">
-              <Input
+              <AuthInput
                 placeholder="Email adress"
                 type="email"
                 className="email"
@@ -88,9 +87,9 @@ export default function Login() {
               />
             </Form.Group>
           </div>
-          <div className="auth-input">
+          <div className="auth-input-login">
             <Form.Group size="lg" controlId="input-password">
-              <Input
+              <AuthInput
                 placeholder="Password"
                 type={type}
                 className="password"
@@ -106,16 +105,14 @@ export default function Login() {
               </span>
             </Form.Group>
           </div>
-          <div className="fgrt-pass-label">
-            <p>
+          <div>
+            <p className="pull-left error-msg-container">{errorMessages}</p>
+            <p className="pull-right forgot-text">
               <a href="/reset"> Forgot password?</a>
             </p>
           </div>
-          <div className="error-msg-container">
-            <p>{errorMessages}</p>
-          </div>
           <div className="btn-login-container">
-            <Submit
+            <SubmitBtn
               className="btn-login"
               text="Log in"
               disabled={!validateForm()}

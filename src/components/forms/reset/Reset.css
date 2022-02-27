@@ -1,4 +1,4 @@
-.title-form {
+.title-form-reset {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -17,12 +17,12 @@
   margin-block-start: var(--metric-box-spacing);
 }
 
-.auth-form {
+.auth-form-reset {
   display: flex;
   justify-content: center;
 }
 
-.auth-input {
+.auth-input-reset {
   margin: 5% 0%;
 }
 
@@ -31,16 +31,17 @@
 }
 
 @media only screen and (max-device-width: 480px) {
-  /* .reset-prg-container {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    width: 378px;
+  .reset-prg-container {
+    display: inline-block;
+    width: 25%;
+    justify-content: center;
     /* vezi Figma */
-  /* white-space: nowrap;
-  } */
+  }
+  .reset-prg-container p {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    margin-top: -11%;
+    text-indent: 20px;
+  }
 }

@@ -1,73 +1,4 @@
-/* @media all and (min-width: 480px) {
-  .Login {
-    padding: 60px 0;
-  }
-
-  .Login form {
-    margin: 0 auto;
-    max-width: 320px;
-  }
-} */
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Campton";
-  background-color: #0a0a0a;
-  position: absolute;
-  width: 560px;
-  height: 711px;
-  left: 650px;
-  top: 205px;
-  padding: 190px 30px;
-}
-
-.log {
-  height: 25px;
-  width: 266.91px;
-  left: 50.05px;
-  top: 13px;
-
-  font-family: Campton;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: center;
-
-  position: absolute;
-  left: 13.64%;
-  right: 13.64%;
-  top: 27.08%;
-  bottom: 20.83%;
-  font-family: Campton;
-  font-size: 18px;
-  line-height: 25px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-}
-
-.login-btn {
-  height: 48px;
-  width: 367px;
-  left: 0px;
-  top: 0px;
-  border-radius: 8px;
-  position: relative;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  background: #f5044c;
-  border-radius: 8px;
-}
-
-.title-form {
+.title-form-login {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -75,22 +6,16 @@
   margin: 40px 0px;
 }
 
-.auth-form {
+.auth-form-login {
   display: flex;
   justify-content: center;
 }
 
-.auth-input {
+.auth-input-login {
   margin: 5% 0%;
 }
 
-.fgrt-pass-label {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 0%;
-}
-
-.fgrt-pass-label a {
+.forgot-text a {
   color: #9c9b9b;
   text-decoration: none;
 }
@@ -125,6 +50,14 @@
   right: 10px;
   z-index: 2;
 }
+.login-icon {
+  padding-top: 16px;
+  float: right;
+  margin-left: -27px;
+  z-index: 3;
+  position: relative;
+  cursor: pointer;
+}
 
 .error-msg-container {
   color: #f5044c;
@@ -132,36 +65,14 @@
   justify-content: center;
 }
 
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
 @media only screen and (max-device-width: 480px) {
-  /* styles for mobile browsers smaller than 480px; (iPhone) */
-  /* .auth-form {
-    background-image: url(../../../assets/images/image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  } */
-  /* .auth-input {
-    margin: 5% 0%;
-  } */
-  /* .title-form {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    /* text-align: center; */
-  /* margin: 40px 0px; */
-  /* } */
-
-  .fgrt-pass-label {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0%;
-  }
-
-  .fgrt-pass-label a {
-    color: #9c9b9b;
-    text-decoration: none;
-  }
-
   .btn-login-container {
     margin: 75px 0px;
   }

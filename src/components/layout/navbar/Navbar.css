@@ -1,30 +1,12 @@
-/* nav {
-  width: 100%;
-} */
-
 .navi-list {
-  display: -webkit-box;
+  /* display: -webkit-box; */
   display: flex;
   justify-content: space-around;
   -webkit-box-align: center;
   align-items: center;
   list-style: none;
-  /* width: 30%; */
-  /* position: absolute; */
-  /* top: 72px; */
   margin: 25px 0;
 }
-/* .text-nav {
-  /* position: absolute; */
-/* width: 85px;
-  height: 22px;
-  left: 277px; */
-/* font-family: Campton;
-  font-size: 16px;
-  line-height: 22px;
-  /* identical to box height */
-/* color: #ffffff;
-} */
 
 .nav-links {
   color: #ffffff;
@@ -42,58 +24,43 @@
   order: 2;
 }
 
-/* .text-watch {
-  position: absolute;
-  font-family: Campton;
-  width: 75px;
-  height: 22px;
-  left: 1069px;
-  /* identical to box height */
-/* } */
-
-/* .text-contact {
-  position: absolute;
-  font-family: Campton;
-  width: 64px;
-  height: 22px;
-  left: 1224px;
-} */
-
 .logo {
   width: 257px;
   height: 57px;
-  /* left: 591px;
-  top: 72px; */
   -webkit-box-ordinal-group: 2;
   order: 1;
-  /* line-height: 32px; */
   padding: 15px;
   margin-top: 10px;
   width: min(50vw, 200px);
+}
+.nav-content-mobile {
+  display: none;
 }
 
 @media all and (max-width: 800px) {
   .navi-list {
     display: none;
   }
-  /* .navi-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: stretch;
-    align-items: stretch;
+  .nav-content-mobile {
+    display: flex;
+    justify-content: center;
+    background-color: #f5044c;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px -0.5px 0px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(27.1828px);
+    height: 49px;
   }
-
-  .logo {
-    -webkit-box-ordinal-group: 1;
-    order: 0;
-    text-align: center;
-    width: 100px;
-    margin: auto auto 20px;
+  .navi-list-mobile {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    list-style: none;
   }
-
-  .nav-links {
-    text-align: center;
-    border-bottom: 1px solid #111; */
-  /* } */
+  .navi-list-mobile i {
+    justify-content: space-evenly;
+    color: #ffffff;
+  }
 }

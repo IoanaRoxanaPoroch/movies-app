@@ -1,9 +1,7 @@
 .name {
-  /* position: absolute; */
+  position: relative;
   width: 368px;
   height: 48px;
-  left: 750px;
-  top: 430px;
   border-radius: 8px;
   border: 1px solid #9c9b9b;
   box-sizing: border-box;
@@ -13,11 +11,9 @@
 }
 
 .email {
-  /* position: absolute; */
+  position: relative;
   width: 368px;
   height: 48px;
-  left: 750px;
-  top: 490px;
   border-radius: 8px;
   border: 1px solid #9c9b9b;
   box-sizing: border-box;
@@ -28,11 +24,9 @@
 }
 
 .password {
-  /* position: absolute; */
+  position: relative;
   width: 368px;
   height: 48px;
-  left: 750px;
-  top: 550px;
   border-radius: 8px;
   border: 1px solid #9c9b9b;
   box-sizing: border-box;

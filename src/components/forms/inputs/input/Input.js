@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Input.css";
 import Form from "react-bootstrap/Form";
 
-export default function Input(props) {
+export default function AuthInput(props) {
 
 
 
