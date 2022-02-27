@@ -1,0 +1,43 @@
+.name {
+  /* position: absolute; */
+  width: 368px;
+  height: 48px;
+  left: 750px;
+  top: 430px;
+  border-radius: 8px;
+  border: 1px solid #9c9b9b;
+  box-sizing: border-box;
+  background-color: #0a0a0a;
+  text-indent: 10px;
+  z-index: 2;
+}
+
+.email {
+  /* position: absolute; */
+  width: 368px;
+  height: 48px;
+  left: 750px;
+  top: 490px;
+  border-radius: 8px;
+  border: 1px solid #9c9b9b;
+  box-sizing: border-box;
+  background-color: #0a0a0a;
+  color: aliceblue;
+  text-indent: 10px;
+  z-index: 2;
+}
+
+.password {
+  /* position: absolute; */
+  width: 368px;
+  height: 48px;
+  left: 750px;
+  top: 550px;
+  border-radius: 8px;
+  border: 1px solid #9c9b9b;
+  box-sizing: border-box;
+  background-color: #0a0a0a;
+  color: #9c9b9b;
+  text-indent: 10px;
+  z-index: 2;
+}

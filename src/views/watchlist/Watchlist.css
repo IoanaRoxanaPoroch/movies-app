@@ -1,0 +1,17 @@
+.watchlist-container {
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.title-container {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.search-movies-container {
+  display: flex;
+  justify-content: space-between;
+}

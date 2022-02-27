@@ -1,0 +1,99 @@
+/* nav {
+  width: 100%;
+} */
+
+.navi-list {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  list-style: none;
+  /* width: 30%; */
+  /* position: absolute; */
+  /* top: 72px; */
+  margin: 25px 0;
+}
+/* .text-nav {
+  /* position: absolute; */
+/* width: 85px;
+  height: 22px;
+  left: 277px; */
+/* font-family: Campton;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+/* color: #ffffff;
+} */
+
+.nav-links {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Campton";
+}
+
+.nav-links:hover {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 5px;
+}
+
+.nav-links:nth-of-type(n + 4) {
+  -webkit-box-ordinal-group: 3;
+  order: 2;
+}
+
+/* .text-watch {
+  position: absolute;
+  font-family: Campton;
+  width: 75px;
+  height: 22px;
+  left: 1069px;
+  /* identical to box height */
+/* } */
+
+/* .text-contact {
+  position: absolute;
+  font-family: Campton;
+  width: 64px;
+  height: 22px;
+  left: 1224px;
+} */
+
+.logo {
+  width: 257px;
+  height: 57px;
+  /* left: 591px;
+  top: 72px; */
+  -webkit-box-ordinal-group: 2;
+  order: 1;
+  /* line-height: 32px; */
+  padding: 15px;
+  margin-top: 10px;
+  width: min(50vw, 200px);
+}
+
+@media all and (max-width: 800px) {
+  .navi-list {
+    display: none;
+  }
+  /* .navi-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+  }
+
+  .logo {
+    -webkit-box-ordinal-group: 1;
+    order: 0;
+    text-align: center;
+    width: 100px;
+    margin: auto auto 20px;
+  }
+
+  .nav-links {
+    text-align: center;
+    border-bottom: 1px solid #111; */
+  /* } */
+}

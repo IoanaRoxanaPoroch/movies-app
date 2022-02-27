@@ -1,0 +1,27 @@
+.select-form {
+  background-color: black;
+  border: 1px solid #f5044c;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 176px;
+  height: 56px;
+  color: #f5044c;
+}
+
+/* 
+.option {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: black;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+} */
+
+.select-form option:hover {
+  background-color: black;
+}

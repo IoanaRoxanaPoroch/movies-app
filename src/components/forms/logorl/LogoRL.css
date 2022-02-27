@@ -1,0 +1,11 @@
+.logorl {
+  width: min(50vw, 200px);
+}
+
+@media only screen and (max-device-width: 480px) {
+  .logorl {
+    position: absolute;
+    left: calc(37% - 127px);
+    top: calc(78% - 470px);
+  }
+}

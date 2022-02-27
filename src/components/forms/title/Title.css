@@ -1,0 +1,34 @@
+.title-aut {
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  /* position: absolute; */
+  width: 305px;
+  height: 144px;
+  left: 750px;
+}
+
+.title-watchlist {
+  /* display: flex; */
+  color: white;
+  text-align: left;
+  font-size: 48px;
+  line-height: 60px;
+  font-family: "Campton";
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .title-aut {
+    display: flex;
+    text-align: start;
+    color: white;
+    justify-content: flex-start;
+    font-size: 30px;
+    padding-top: 15%;
+  }
+}

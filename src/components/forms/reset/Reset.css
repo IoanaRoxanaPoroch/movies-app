@@ -1,0 +1,46 @@
+.title-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0px;
+}
+.reset-prg-container {
+  display: flex;
+  justify-content: center;
+  color: #9c9b9b;
+  text-align: center;
+  /* vezi Figma */
+}
+.reset-prg-container p {
+  max-inline-size: initial;
+  margin-block-start: var(--metric-box-spacing);
+}
+
+.auth-form {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-input {
+  margin: 5% 0%;
+}
+
+.btn-reset-container {
+  margin: 40px 0px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* .reset-prg-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    width: 378px;
+    /* vezi Figma */
+  /* white-space: nowrap;
+  } */
+}
