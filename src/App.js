@@ -10,6 +10,8 @@ import Watchlist from "./views/watchlist/Watchlist";
 import LoginContainer from "./views/authentification/login/loginContainer";
 import RegisterContainer from "./views/authentification/register/registerContainer";
 import ResetContainer from "./views/authentification/reset/resetContainer";
+import Try from "./components/forms/inputs/select/Try";
+import App1 from "./components/forms/inputs/select/Try";
 
 export default function App() {
   const [isShowenNavbarFooter, setIsShowenNavbarFooter] = useState(true);
@@ -34,6 +36,7 @@ export default function App() {
           <Route path="/register" element={<RegisterContainer />}></Route>
           <Route path="/login" element={<LoginContainer />}></Route>
           <Route path="/reset" element={<ResetContainer />}></Route>
+          {/* <Route path="/try" element={<App1 />}></Route> */}
         </Routes>
         {isShowenNavbarFooter && <Footer />}
       </Router>

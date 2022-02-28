@@ -1,0 +1,57 @@
+.image-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container img {
+  top: 50%;
+  left: 50%;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: end;
+  align-self: end;
+
+  z-index: 2;
+}
+
+.btn-add {
+  background-color: #f5044c;
+  border-radius: 8px;
+  width: 176px;
+  height: 32px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: -20%;
+}
+
+.btn-rating {
+  background: #ff9a03;
+  border-radius: 5px;
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  margin-left: 5px;
+  cursor: pointer;
+  margin-top: -20%;
+}
+
+.title-movie-container {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 80px;
+}
+
+.info-container {
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 19px;
+}

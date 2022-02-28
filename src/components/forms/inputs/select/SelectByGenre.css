@@ -1,0 +1,13 @@
+.select-form-genre {
+  width: 90px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background: #f5044c;
+  border-radius: 8px;
+}
+
+.select-form-genre option:hover {
+  background: #c7044c !important;
+}

@@ -1,0 +1,11 @@
+.select-form {
+  background-color: black;
+  border: 1px solid #f5044c;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 176px;
+  height: 56px;
+  color: #f5044c;
+}
+
+

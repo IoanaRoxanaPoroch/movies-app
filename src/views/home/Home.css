@@ -1,6 +1,45 @@
-.moviecard {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 10px;
+.next-container {
+  background-color: #13131c;
+}
+.top-elements {
+  display: flex;
+  justify-content: space-evenly;
+}
+.title-top-container p {
+  width: 592px;
+  height: 128px;
+  font-size: 48px;
+  line-height: 60px;
+}
+.select-input-container {
+  display: flex;
   justify-content: space-around;
+}
+
+.select-input-container p {
+  margin: 10px 7px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.moviecard-container {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  grid-gap: 40px;
+}
+
+.moviecard {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+@media only screen and (max-width: 480px) {
+  .moviecard-container {
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, auto);
+  }
 }
