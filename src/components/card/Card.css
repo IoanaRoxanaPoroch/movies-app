@@ -55,3 +55,9 @@
   font-size: 14px;
   line-height: 19px;
 }
+
+.genre-ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+

@@ -37,6 +37,7 @@
   transition: all 0.3s ease 0s;
 }
 
+
 @media only screen and (max-width: 480px) {
   .moviecard-container {
     grid-gap: 20px;

@@ -3,10 +3,7 @@ import "./SelectByGenre.css";
 
 export default function SelectByGenre({ parentCallback }) {
   const [genre, setGenre] = useState("");
-  const genreMovies = [
-    { value: "", name: "Select by gen" },
-    { value: "adventure", name: "Adventure" },
-  ];
+
   return (
     <>
       <select
