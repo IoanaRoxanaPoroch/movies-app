@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Register.css";
 import Form from "react-bootstrap/Form";
 import Title from "../title/Title";
-import AuthInput from "../inputs/input/Input";
+import AuthInput from "../inputs/input/AuthInput";
 import SubmitBtn from "../../buttons/submit/Submit";
 
 export default function Register() {

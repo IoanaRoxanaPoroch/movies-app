@@ -11,6 +11,7 @@ import LoginContainer from "./views/authentification/login/loginContainer";
 import RegisterContainer from "./views/authentification/register/registerContainer";
 import ResetContainer from "./views/authentification/reset/resetContainer";
 import CarouselImage from "./components/carousel/CardsCarousel";
+import MoviesAdmin from "./views/movieAdmin/MoviesAdmin";
 
 export default function App() {
   const [isShowenNavbarFooter, setIsShowenNavbarFooter] = useState(true);
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="/login" element={<LoginContainer />}></Route>
           <Route path="/reset" element={<ResetContainer />}></Route>
           <Route path="/carousel" element={<CarouselImage />}></Route>
+          <Route path="/admin" element={<MoviesAdmin />}></Route>
         </Routes>
         {isShowenNavbarFooter && <Footer />}
       </Router>

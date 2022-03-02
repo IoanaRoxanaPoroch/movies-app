@@ -1,0 +1,158 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modal {
+  z-index: 100;
+  background: white;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  max-width: 500px;
+  padding: 2rem;
+  height: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+}
+
+button {
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  padding: 0.3rem 1rem;
+  margin-left: 0.5rem;
+}
+
+.button-default {
+  background: #247ba0;
+  color: #fff;
+}
+
+.title-modal-container {
+  display: flex;
+  color: #000;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.inputs-container {
+  color: #000;
+  display: flex;
+  justify-items: center;
+  margin: auto;
+  flex-direction: column;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.inputs-container input {
+  box-shadow: 0px 4px 100px rgba(163, 163, 163, 0.1);
+  border-radius: 8px;
+}
+
+.first-inputs-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-inputs-container input {
+  width: 220px;
+  height: 30px;
+  color: #000;
+  opacity: 0.7;
+}
+
+.original-source-input {
+  width: 440px;
+  height: 30px;
+}
+
+.cover-url-input {
+  width: 440px;
+  height: 30px;
+}
+
+.description-input {
+  width: 440px;
+  height: 120px;
+}
+
+.release-input {
+  width: 440px;
+  height: 30px;
+}
+
+.categ-score-container {
+  color: #000;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-around;
+}
+
+.categ-input {
+  width: 240px;
+  height: 30px;
+}
+
+.score-input {
+  width: 200px;
+  height: 30px;
+}
+
+.bottom-btns-container {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.add-btn {
+  background-color: #f5044c;
+  color: #fff;
+  border-radius: 8px;
+  width: 440px;
+  height: 48px;
+  margin-left: -3%;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  color: #010103;
+  opacity: 0.7;
+  margin-left: -3%;
+}

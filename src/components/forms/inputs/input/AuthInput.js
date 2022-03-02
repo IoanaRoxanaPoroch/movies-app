@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import "./Input.css";
+import "./AuthInput.css";
 import Form from "react-bootstrap/Form";
 
 export default function AuthInput(props) {
-
-
-
   return (
     <Form.Group size="lg" controlId={props.type}>
       <Form.Control

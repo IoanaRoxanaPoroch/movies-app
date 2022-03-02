@@ -1,63 +1,92 @@
 import React, { Component } from "react";
 import "./Footer.css";
 import logo from "../../../assets/logo/logo.png";
-// import "font-awesome/css/font-awesome.min.css";
+import facebook from "../../../assets/logo/facebook.png";
+import twitter from "../../../assets/logo/twitter.png";
+import youtube from "../../../assets/logo/youtube.png";
 
 class Footer extends Component {
   render() {
-    // cred ca ar trebui sa folosesti nume de clase mai pe inteles
     return (
-      <footer>
-        <div className="footer">
-          <div className="logo-f">
-            <img src={logo} alt="logo" style={{ width: "min(50vw, 200px)" }} />
+      <footer className="footer-distributed">
+        <div className="footer-left">
+          <img src={logo} alt="logo" className="footer-logo" />
+        </div>
+        <div className="footer-center">
+          <div className="footer-items">
+            <p>
+              <a href="#">Press Room</a>
+            </p>
           </div>
-          <div className="column links">
-            <ul className="ul-f">
-              <li className="li">
-                <a href="#">Press Room</a>
-              </li>
-              <li className="li">
-                <a href="#">Advertising</a>
-              </li>
-              <li className="li">
-                <a href="#">Jobs</a>
-              </li>
-            </ul>
+          <div className="footer-items">
+            <p>
+              <a href="#">Advertising</a>
+            </p>
           </div>
-          <div className="column links">
-            <ul className="ul-f">
-              <li className="li">
-                <a href="#">Contact us</a>
-              </li>
-              <li className="li">
-                <a href="/register">Register</a>
-              </li>
-              <li className="li">
-                <a href="#">News</a>
-              </li>
-            </ul>
+          <div className="footer-items">
+            <p>
+              <a href="#">Jobs</a>
+            </p>
           </div>
-          <div className="column links">
-            <ul className="ul-f">
-              <li className="li">
-                <a href="#">Conditions of Use</a>
-              </li>
-              <li className="li">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li className="li">
-                <a href="#">Interest-Based Ads</a>
-              </li>
-            </ul>
+        </div>
+
+        <div className="footer-right">
+          <div className="footer-items">
+            <p>
+              <a href="#">Contact us</a>
+            </p>
           </div>
-          <div className="copyright">
-            <p>Copyright © 1990-2019 Moovie.com, Inc.</p>
+          <div className="footer-items">
+            <p>
+              <a href="/register">Register</a>
+            </p>
           </div>
-          <div className="social">
-            <i className="fa-brands fa-facebook"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fa-brands fa-youtube"></i>
+          <div className="footer-items">
+            <p>
+              <a href="#">News</a>
+            </p>
+          </div>
+        </div>
+        <div className="footer-element-3">
+          <div className="footer-items">
+            <p>
+              <a href="#">Conditions of Use</a>
+            </p>
+          </div>
+          <div className="footer-items">
+            <p>
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+          <div className="footer-items">
+            <p>
+              <a href="#">Interest-Based Ads</a>
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div className="second-fotter">
+          <div className="footer_text">
+            <p>Copyright &copy; 1990-2019 Moovie.com, Inc.</p>
+          </div>
+
+          <div className="footer_icons">
+            <div className="inline-block">
+              <p className="footer-text-social">Follow us on social media</p>
+            </div>
+            <div className="inline-block">
+              <a href="#" className="footer-social-buttons">
+                <img src={facebook} />
+              </a>
+              <a href="#" className="footer-social-buttons">
+                <img className="footer-logo-width" src={twitter} />
+              </a>
+              <a href="#">
+                <img className="footer-logo-width" src={youtube} />
+              </a>
+            </div>
           </div>
         </div>
       </footer>

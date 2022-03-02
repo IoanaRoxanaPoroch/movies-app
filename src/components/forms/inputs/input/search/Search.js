@@ -3,7 +3,7 @@ import "./Search.css";
 import Form from "react-bootstrap/Form";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-export default function Search(props) {
+export default function Searchfield(props) {
   const [value, setValue] = useState("");
 
   return (
@@ -12,11 +12,11 @@ export default function Search(props) {
         <Form.Control
           type={props.type}
           name={props.type}
-          className="search"
+          className={props.className}
           placeholder={props.placeholder}
           onChange={(e) => setValue(e.target.value)}
         />
-        <i className="fa fa-search"></i>
+        <i className="fa fa-search search-icon"></i>
       </Form.Group>
     </div>
   );

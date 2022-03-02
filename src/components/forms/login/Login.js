@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import "./Login.css";
 import Title from "../title/Title";
-import AuthInput from "../inputs/input/Input";
+import AuthInput from "../inputs/input/AuthInput";
 import SubmitBtn from "../../buttons/submit/Submit";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import axios from "axios";
@@ -55,15 +55,13 @@ export default function Login() {
         } else {
           sessionStorage.setItem("user", JSON.stringify(userExists));
           if (userExists.role === "admin") {
-            navigate("/");
+            navigate("/moviesadmin");
           } else {
-            navigate("/watchlist");
+            navigate("/");
             window.location.reload();
           }
         }
       }
-
-      // sessionStorage
     } else {
       setErrorMessages("Invalid user!");
     }

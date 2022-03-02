@@ -1,0 +1,23 @@
+.movies-admin-container {
+  background-color: #e5e5e5;
+}
+
+.navbar-container {
+  background-color: #010102;
+}
+
+.btn-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-add-admin {
+  background-color: #f5044c;
+  border-radius: 8px;
+  width: 176px;
+  height: 48px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+}
