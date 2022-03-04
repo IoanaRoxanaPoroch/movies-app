@@ -86,22 +86,6 @@ export default function Login() {
             </Form.Group>
           </div>
           <div className="auth-input-login">
-            {/* <Form.Group size="lg" controlId="input-password">
-              <AuthInput
-                placeholder="Password"
-                type={type}
-                className="password"
-                required
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <span className="password__show" onClick={showHide}>
-                {type === "input" ? (
-                  <i className="far fa-eye eye-icon" />
-                ) : (
-                  <i className="fa-solid fa-eye-slash eye-icon"></i>
-                )}
-              </span>
-            </Form.Group> */}
             <input
               placeholder="Password"
               type={type}

@@ -4,30 +4,39 @@ import Title from "../title/Title";
 import AuthInput from "../inputs/input/AuthInput";
 import SubmitBtn from "../../buttons/submit/Submit";
 import "./Reset.css";
+import { RiCloseLine } from "react-icons/ri";
 
-// cred ca poti folosi es6 pentru functii
+const PopUp = ({ setIsOpen }) => {
+  const [close, setClose] = useState(false);
+  console.log("setIsOpen", typeof setIsOpen);
+  return (
+    <div className="pop-up-wrapper">
+      <div className="pop-up-content">
+        <div onClick={() => setIsOpen(false)} />
+        <button className="close-btn" onClick={() => setIsOpen(false)}>
+          <RiCloseLine style={{ marginBottom: "-3px" }} />
+        </button>
+        <div className="text-pop-up">
+          <p>Verify your email adress for the reset link</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export default function Reset() {
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     setTitle("Reset password");
   });
 
-  // ar trebui sa creezi o functie de validare a inputurilor
-  // indiciu: functia va avea 2 parametri
-  // primul parametru: 'e.target.value'
-  //al doilea parametru: el va reprezenta campul la care vei valida si este de tip string. De exemplu "email".
-  // validateInputs(e.target.value, "email")
-  // in acesta situatie vei putea crea o functie mai dinamica
-
-  // cred ca numele acestei functie ar trebui sa fie "validateButton"
   function validateForm() {
-    // ce se intampla daca nu exista email sau password?
-    if (email.length) {
-      return email.length;
-    }
+    return email.length > 0;
   }
+
   function handleSubmit(event) {
     event.preventDefault();
   }
@@ -52,6 +61,9 @@ export default function Reset() {
                 placeholder="Email adress"
                 type="email"
                 className="email"
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
               />
             </Form.Group>
           </div>
@@ -59,10 +71,13 @@ export default function Reset() {
             <SubmitBtn
               className="btn-reset"
               text="Reset password"
-              name="test"
-              email="test"
-              password="test"
+              name="reset"
+              disabled={!validateForm()}
+              onClick={() => {
+                setIsOpen(true);
+              }}
             />
+            {isOpen && <PopUp setIsOpen={setIsOpen} />}
           </div>
         </Form>
       </div>

@@ -4,29 +4,59 @@ import Form from "react-bootstrap/Form";
 import Title from "../title/Title";
 import AuthInput from "../inputs/input/AuthInput";
 import SubmitBtn from "../../buttons/submit/Submit";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [title, setTitle] = useState("");
+  const [existingUsers, setExistingUsers] = useState([]);
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    setTitle(" Let's create your account");
-  });
+  const validate = () => {
+    if (!name) return true;
+    if (!email) return true;
+    if (!password) return true;
 
-  // ar trebui sa creezi o functie de validare a inputurilor
-  // indiciu: functia va avea 2 parametri
-  // primul parametru: 'e.target.value'
-  //al doilea parametru: el va reprezenta campul la care vei valida si este de tip string. De exemplu "email".
-  // validateInputs(e.target.value, "email")
-  // in acesta situatie vei putea crea o functie mai dinamica
+    return false;
+  };
+
+  const getData = async () => {
+    return await axios.get("http://localhost:3000/users");
+  };
+  useEffect(async () => {
+    setTitle("Let's create your account");
+    let response = await getData();
+    if (response && response.data) {
+      setExistingUsers(response.data);
+    }
+  }, []);
 
   function validateForm() {
     return name.length > 0 && email.length > 0 && password.length > 0;
   }
+
   function handleSubmit(event) {
     event.preventDefault();
+    if (validate()) return;
+  }
+
+  async function handleClick() {
+    let user = {};
+    if (name.length > 0 && email.length > 0 && password.length > 0) {
+      user = { name, email, password };
+      user.role = "user";
+      axios.post("http://localhost:3000/users", user);
+      let response = await getData();
+      if (response && response.data) {
+        setExistingUsers(response.data);
+      }
+      navigate("/login");
+      window.location.reload();
+    }
+    console.log("user", user);
   }
 
   return (
@@ -38,7 +68,16 @@ export default function Register() {
         <Form onSubmit={handleSubmit}>
           <div className="auth-input-register">
             <Form.Group size="lg" controlId="input-name">
-              <AuthInput placeholder="Full Name" type="name" className="name" />
+              <AuthInput
+                placeholder="Full Name"
+                type="name"
+                className="name"
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+                value={name}
+                validate={(val) => (val ? false : "Name Required")}
+              />
             </Form.Group>
           </div>
           <div className="auth-input-register">
@@ -47,6 +86,11 @@ export default function Register() {
                 placeholder="Email adress"
                 type="email"
                 className="email"
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+                value={email}
+                validate={(val) => (val ? false : "Email Required")}
               />
             </Form.Group>
           </div>
@@ -56,6 +100,11 @@ export default function Register() {
                 placeholder="Password"
                 type="password"
                 className="password"
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                }}
+                value={password}
+                validate={(val) => (val ? false : "Password Required")}
               />
             </Form.Group>
           </div>
@@ -71,9 +120,8 @@ export default function Register() {
             <SubmitBtn
               className="btn-register"
               text="Register"
-              name="test"
-              email="test"
-              password="test"
+              disabled={validate}
+              onClick={handleClick}
             />
           </div>
         </Form>

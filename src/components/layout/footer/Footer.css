@@ -140,12 +140,10 @@
   cursor: pointer;
   background-color: #33383b;
   border-radius: 2px;
-
   font-size: 20px;
   color: #ffffff;
   text-align: center;
   line-height: 35px;
-
   margin-right: 3px;
   margin-bottom: 5px;
 }
@@ -173,6 +171,7 @@ hr {
   align-items: center;
   justify-content: space-between;
 }
+
 .footer_text {
   font-size: 17px;
   width: 50%;
@@ -182,7 +181,6 @@ hr {
   text-align: end;
   display: block;
   width: 50%;
-  text-align: end;
 }
 
 .footer-social-buttons {

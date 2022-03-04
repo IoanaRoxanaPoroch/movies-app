@@ -1,5 +1,4 @@
 .navi-list {
-  /* display: -webkit-box; */
   display: flex;
   justify-content: space-around;
   -webkit-box-align: center;

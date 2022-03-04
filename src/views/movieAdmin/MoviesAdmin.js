@@ -1,19 +1,57 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useCallback } from "react";
 import Searchfield from "../../components/forms/inputs/input/search/Search";
 import "./MoviesAdmin.css";
-import UseModal from "../../components/forms/modal/UseModal";
-import ModalAdd from "../../components/forms/modal/ModalAdd";
-import Modal from "../../components/forms/modal/ModalAdd";
+import Modal from "../../components/forms/modal/Modal";
+import bin from "../../assets/images/bin.png";
+import pen from "../../assets/images/pen.png";
+
+function RowCard({ info }) {
+  const clickDelete = () => {
+    console.log("delete clicked");
+  };
+  const clickEdit = () => {
+    console.log("edit clicked");
+  };
+  return (
+    <div className="row-card-container">
+      <img
+        src="https://mdbootstrap.com/img/new/standard/nature/111.webp" //imagine film
+        alt="..."
+        style={{ width: "80px", height: "80px" }}
+      />
+      {/* Title */}
+      <h3 style={{ color: "black" }}>{info[0]}</h3>
+      {/* Release Date */}
+      <p style={{ color: "black" }}>{info[7]}</p>
+      {/* Genre/Category */}
+      <p style={{ color: "black" }}>{info[5]}</p>
+      <img
+        src={bin}
+        alt="..."
+        style={{ width: "14px", height: "16px" }}
+        onClick={clickDelete}
+      />
+      <img
+        src={pen}
+        alt="..."
+        style={{ width: "14px", height: "16px" }}
+        onClick={clickEdit}
+      />
+    </div>
+  );
+}
 
 export default function MoviesAdmin() {
   const [movies, setMovies] = useState([]);
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [info, setInfo] = useState({});
+  const [show, setShow] = useState(false);
 
-  const openModal = () => {
-    setIsOpen(true);
-    console.log("in functie", modalIsOpen);
-  };
-
+  const infos = useCallback((infos) => {
+    setInfo(infos);
+    setShow(true);
+  }, []);
+  console.log("info", info);
   return (
     <div className="movies-admin-container">
       <div className="navbar-container">
@@ -35,15 +73,16 @@ export default function MoviesAdmin() {
           className="search-movies-admin"
           placeholder="Search for a movie..."
         />
-        <button className="btn-add-admin" onClick={openModal}>
+        <button className="btn-add-admin" onClick={() => setIsOpen(true)}>
           Add new
         </button>
-
-        <Modal toggle={modalIsOpen} />
+        {isOpen && <Modal setIsOpen={setIsOpen} parentCallback={infos} />}
+        {/* {show && <RowCard info={info} />} */}
       </div>
+
       <div className="movies-list">
         <ul>
-          <li>FirstMovie</li>
+          <li></li>
         </ul>
       </div>
     </div>
