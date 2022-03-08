@@ -12,7 +12,6 @@ const Modal = ({ setIsOpen, parentCallback }) => {
   const [score, setScore] = useState("");
   const [releaseDate, setReleaseDate] = useState("");
 
-  console.log("modal setIsOpen", typeof(setIsOpen));
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -30,14 +29,6 @@ const Modal = ({ setIsOpen, parentCallback }) => {
       score,
       releaseDate,
     ];
-    // movieInfo.title = title;
-    // movieInfo.titleUrl = titleUrl;
-    // movieInfo.source = source;
-    // movieInfo.coverUrl = coverUrl;
-    // movieInfo.description = description;
-    // movieInfo.category = category;
-    // movieInfo.score = score;
-    // movieInfo.releaseDate = releaseDate;
     parentCallback(movieInfo);
   };
 

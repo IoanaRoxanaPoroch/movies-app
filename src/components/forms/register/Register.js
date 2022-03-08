@@ -120,7 +120,7 @@ export default function Register() {
             <SubmitBtn
               className="btn-register"
               text="Register"
-              disabled={validate}
+              disabled={!validateForm}
               onClick={handleClick}
             />
           </div>

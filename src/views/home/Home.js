@@ -30,21 +30,12 @@ const Home = () => {
   }, []);
 
   const dateCallback = useCallback((date) => {
-    console.log("zzzzzzz date ", date.slice(5, 7));
     setDate(date);
   }, []);
 
-  console.log("zzzzz", movies[0]);
-
   return (
     <>
-      <div className="main-movie-container">
-        <p>vdvfd</p>
-        <p>movie.info</p>
-        {/* <img src={movies[0].info.image_url} alt="" /> */}
-        <button>Watch trailer</button>
-        <button>Add to list</button>
-      </div>
+      <div className="main-movie-container"></div>
       <CarouselImage />
       <div className="next-container">
         <div className="top-elements">
@@ -58,7 +49,6 @@ const Home = () => {
           </div>
         </div>
         {loading && <div>Loading</div>}
-
         {!loading && (
           <div className="moviecard-container">
             {movies

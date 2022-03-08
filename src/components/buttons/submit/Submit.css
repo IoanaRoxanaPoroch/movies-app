@@ -1,11 +1,6 @@
 .btn-register {
-  /* position: absolute; */
-  /* left: 750px;
-  top: 715px; */
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
-  /* display: flex; */
   align-items: center;
   text-align: center;
   color: #ffffff;
@@ -16,13 +11,8 @@
   z-index: 2;
 }
 .btn-login {
-  /* position: absolute; */
-  /* left: 750px;
-  top: 715px; */
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
-  /* display: flex; */
   align-items: center;
   text-align: center;
   color: #ffffff;
@@ -34,13 +24,8 @@
 }
 
 .btn-reset {
-  /* position: absolute; */
-  /* left: 750px;
-  top: 715px; */
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
-  /* display: flex; */
   align-items: center;
   text-align: center;
   color: #ffffff;

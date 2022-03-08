@@ -1,9 +1,4 @@
 import React, { PropTypes } from "react";
-// import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
-// import { ReactCSSTransition } from "react-transition";
-// var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
-// var ReactCSSTransitionGroup = require("react-transition-group");
-// var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 class CarouselImage extends React.Component {
   constructor(props) {
@@ -20,7 +15,6 @@ class CarouselImage extends React.Component {
   generateItems() {
     var items = [];
     var level;
-    console.log(this.state.active);
     for (var i = this.state.active - 2; i < this.state.active + 3; i++) {
       var index = i;
       if (i < 0) {

@@ -42,7 +42,6 @@ export default function Reset() {
   }
 
   return (
-    // aici ar trebui sa creezi o functie pentru a valida toate input-urile
     <div style={{ width: "100%" }}>
       <div className="title-form-reset">
         <Title title={title} className="title-aut" />

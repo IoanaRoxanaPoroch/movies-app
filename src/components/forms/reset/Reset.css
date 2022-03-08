@@ -10,7 +10,6 @@
   justify-content: center;
   color: #9c9b9b;
   text-align: center;
-  /* vezi Figma */
 }
 .reset-prg-container p {
   max-inline-size: initial;
@@ -31,7 +30,6 @@
 }
 
 .pop-up-wrapper {
-  /* position: fixed; */
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -71,7 +69,6 @@
     display: inline-block;
     width: 25%;
     justify-content: center;
-    /* vezi Figma */
   }
   .reset-prg-container p {
     text-align: center;
