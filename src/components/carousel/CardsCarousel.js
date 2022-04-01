@@ -1,15 +1,20 @@
 import React, { PropTypes } from "react";
+import MovieCard from "../card/Card";
+import TryCard from "../card/TryCard";
+import Card from "../card/TryCard";
+import "./CardsCarousel.css";
 
 class CarouselImage extends React.Component {
   constructor(props) {
+    console.log("vvvv", props.movie);
     super(props);
     this.state = {
       items: this.props.items,
       active: this.props.active,
       direction: "",
     };
-    this.rightClick = this.moveRight.bind(this);
-    this.leftClick = this.moveLeft.bind(this);
+    // this.rightClick = this.moveRight.bind(this);
+    // this.leftClick = this.moveLeft.bind(this);
   }
 
   generateItems() {
@@ -30,26 +35,29 @@ class CarouselImage extends React.Component {
     return items;
   }
 
-  moveLeft() {
-    var newActive = this.state.active;
-    newActive--;
-    this.setState({
-      active: newActive < 0 ? this.state.items.length - 1 : newActive,
-      direction: "left",
-    });
-  }
+  // moveLeft() {
+  //   var newActive = this.state.active;
+  //   newActive--;
+  //   this.setState({
+  //     active: newActive < 0 ? this.state.items.length - 1 : newActive,
+  //     direction: "left",
+  //   });
+  // }
 
-  moveRight() {
-    var newActive = this.state.active;
-    this.setState({
-      active: (newActive + 1) % this.state.items.length,
-      direction: "right",
-    });
-  }
+  // moveRight() {
+  //   var newActive = this.state.active;
+  //   this.setState({
+  //     active: (newActive + 1) % this.state.items.length,
+  //     direction: "right",
+  //   });
+  // }
 
   render() {
     return (
       <div id="carousel" className="noselect">
+        <div>
+          <p style={{ color: "black" }}>Recent added movies</p>
+        </div>
         <div className="arrow arrow-left" onClick={this.leftClick}>
           <i className="fi-arrow-left"></i>
         </div>
@@ -58,6 +66,14 @@ class CarouselImage extends React.Component {
         {/* </ReactCSSTransition> */}
         <div className="arrow arrow-right" onClick={this.rightClick}>
           <i className="fi-arrow-right"></i>
+          <div className="cards-container">
+            {/* <MovieCard movie={this.props.movie} /> */}
+
+            <TryCard />
+            <TryCard />
+            <TryCard />
+            <TryCard />
+          </div>
         </div>
       </div>
     );

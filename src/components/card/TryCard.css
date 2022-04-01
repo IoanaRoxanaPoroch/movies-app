@@ -1,0 +1,17 @@
+.card {
+  max-width: 35ch;
+  padding: 10rem 0 0;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.card img {
+  max-width: 272px;
+  min-height: 416px;
+  border-radius: 20px;
+}
+
+.card-content {
+  padding: 1.5em;
+  z-index: 2;
+}

@@ -35,8 +35,12 @@ const Home = () => {
 
   return (
     <>
-      <div className="main-movie-container"></div>
-      <CarouselImage />
+      <div className="main-movie-container">
+        <MainMovie />
+      </div>
+      <div className="carousel-wrapper">
+        {!loading && <CarouselImage movie={movies[0]} />}
+      </div>
       <div className="next-container">
         <div className="top-elements">
           <div className="title-top-container">

@@ -5,6 +5,9 @@
 }
 
 .image-container img {
+  max-width: 272px;
+  min-height: 416px;
+  border-radius: 20px;
   top: 50%;
   left: 50%;
 }
@@ -60,4 +63,3 @@
   display: flex;
   justify-content: space-evenly;
 }
-

@@ -5,7 +5,7 @@ import "./Card.css";
 export default function MovieCard({ movie }) {
   const { title, info } = movie;
   return (
-    <div>
+    <div className="card-wrapper">
       <div className="image-container">
         <img src={poster} alt="movie poster" />
         <div className="btns-container">
@@ -13,7 +13,6 @@ export default function MovieCard({ movie }) {
           <button className="btn-rating">{info.rating}</button>
         </div>
       </div>
-
       <div className="card-content">
         <div className="title-movie-container">
           <p>{title}</p>

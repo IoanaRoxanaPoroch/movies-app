@@ -37,6 +37,10 @@
   transition: all 0.3s ease 0s;
 }
 
+.carousel-wrapper {
+  border: 5px solid pink;
+  background-color: #ffffff;
+}
 
 @media only screen and (max-width: 480px) {
   .moviecard-container {
