@@ -4,6 +4,7 @@ import "./Card.css";
 
 export default function MovieCard({ movie }) {
   const { title, info } = movie;
+  console.log("test");
   return (
     <div className="card-wrapper">
       <div className="image-container">
