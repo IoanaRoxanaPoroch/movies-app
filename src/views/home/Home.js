@@ -16,7 +16,7 @@ const Home = () => {
   const getMovies = async () => {
     return await axios.get("http://localhost:3000/movies");
   };
-
+  console.log("test");
   useEffect(async () => {
     const response = await getMovies();
     if (response && response.data) {
